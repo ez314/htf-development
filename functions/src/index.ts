@@ -17,9 +17,13 @@ app.get("/hello", (request: Request, response: Response) => {
 
 // import functions
 import { hello_first, first_last } from "./api/template";
+import { hello_paulL, paul_lupeituu } from "./api/paulL";
 
 app.get("/first-last", first_last);
 app.get("/hello-first-last/:name", hello_first);
+
+app.get("/hello-paulL-utd/:name", hello_paulL);
+app.get("/paul-lupeituu", paul_lupeituu);
 
 /* Change things above this line */
 
