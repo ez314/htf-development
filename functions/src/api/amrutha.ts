@@ -24,10 +24,10 @@ export const hello_amrutha = async (request: Request, response: Response): Promi
  * @param request unique request that contains persons firstname-lastname
  * @param response queries the hacktoberfest database and returns the user data
  */
-export const first_last = async (request: Request, response: Response): Promise<void> => {
+export const amrutha_utd = async (request: Request, response: Response): Promise<void> => {
     const baseurl = functions.config().baseurl.firebase; // resolves to https://cloudfunctions.net
     const data = {
-        email: "harshasrikara@gmail.com"
+        email: "axr190085@utdallas.edu"
     }
     const result = await axios.default.post(baseurl, data);
     const res = result.data;
