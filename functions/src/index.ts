@@ -18,8 +18,15 @@ app.get("/hello", (request: Request, response: Response) => {
 // import functions
 import { hello_first, first_last } from "./api/template";
 
+// add your import in addition to the ones above
+import { hello_brian, brian_lam } from "./api/brian"
+
 app.get("/first-last", first_last);
 app.get("/hello-first-last/:name", hello_first);
+
+// add your endpoint in addition to the default one
+app.get("/hello-brian-lam/:name", hello_brian);
+app.get("/brian-lam", brian_lam);
 
 /* Change things above this line */
 
