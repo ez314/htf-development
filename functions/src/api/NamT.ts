@@ -25,7 +25,7 @@ export const hello_Nam = async (request: Request, response: Response): Promise<v
 export const nam_truong = async (request: Request, response: Response): Promise<void> => {
     const baseurl = functions.config().baseurl.firebase; // resolves to https://cloudfunctions.net
     const data = {
-        email: "namtruong831@gmail.com"
+        email: "nqt190001@utdallas.edu"
     }
     const result = await axios.default.post(baseurl, data);
     const res = result.data;
