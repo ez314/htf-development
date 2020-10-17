@@ -23,7 +23,7 @@ import { hello_amrutha, amrutha_utd } from "./api/amrutha";
 app.get("/first-last", first_last);
 app.get("/hello-first-last/:name", hello_first);
 app.get("/hello-amrutha-utd/:name", hello_amrutha);
-app.get("/amrutha-utd/:name", amrutha_utd);
+app.get("/amrutha-utd/", amrutha_utd);
 
 
 /* Change things above this line */
