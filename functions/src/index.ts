@@ -16,11 +16,20 @@ app.get("/hello", (request: Request, response: Response) => {
 /* Change things below this line */
 
 // import functions
+// import functions
+// import functions
+// import functions
 import { hello_first, first_last } from "./api/template";
 
-app.get("/first-last", first_last);
-app.get("/hello-first-last/:name", hello_first);
+//add your import in addition to the ones above
+import { hello_perry, perry_son } from "./api/PerryS"
 
+app.get("/hello-first-last/:name", hello_first);
+app.get("/first-last", first_last);
+
+//add your endpoint in addition to the default one
+app.get("/hello-perry-son/:name", hello_perry);
+app.get("/perry-son", perry_son);
 /* Change things above this line */
 
 //the line of code below will deploy to firebase cloud functions instead of running locally
