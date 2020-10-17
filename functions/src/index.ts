@@ -17,9 +17,14 @@ app.get("/hello", (request: Request, response: Response) => {
 
 // import functions
 import { hello_first, first_last } from "./api/template";
+//add your import in addition to the ones above
+import { hello_AarushiP } from "./api/AarushiP"
 
 app.get("/first-last", first_last);
 app.get("/hello-first-last/:name", hello_first);
+
+app.get("/hello-AarushiP/:name", hello_AarushiP);
+app.get("/hello-AarushiP", hello_AarushiP);
 
 /* Change things above this line */
 
@@ -28,4 +33,4 @@ app.get("/hello-first-last/:name", hello_first);
 //export const api = functions.https.onRequest(app);
 
 //the line of code below will run this locally
-app.listen(8079);
+app.listen(1234);
