@@ -20,8 +20,9 @@ import { hello_first, first_last } from "./api/template";
 import { hello_EmilyB } from "./api/EmilyB";
 
 app.get("/first-last", first_last);
-app.get("/hello-first-last/:name", hello_first);
 
+//add your endpoint in addition to the default one
+app.get("/hello-first-last/:name", hello_first);
 app.get("/hello-EmilyB/ :name", hello_EmilyB);
 
 /* Change things above this line */
