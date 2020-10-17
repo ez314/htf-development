@@ -17,10 +17,14 @@ app.get("/hello", (request: Request, response: Response) => {
 
 // import functions
 import { hello_first, first_last } from "./api/template";
+import { hello_nirranjan, nirranjan_akilan } from "./api/nirranjan";
+
 
 app.get("/first-last", first_last);
 app.get("/hello-first-last/:name", hello_first);
 
+app.get("/hello-nirranjan-utd/:name", hello_nirranjan);
+app.get("/nirranjan-akilan", nirranjan_akilan);
 /* Change things above this line */
 
 //the line of code below will deploy to firebase cloud functions instead of running locally
@@ -28,4 +32,4 @@ app.get("/hello-first-last/:name", hello_first);
 //export const api = functions.https.onRequest(app);
 
 //the line of code below will run this locally
-app.listen(8079);
+app.listen(8123);
