@@ -17,10 +17,13 @@ app.get("/hello", (request: Request, response: Response) => {
 
 // import functions
 import { hello_first, first_last } from "./api/template";
+import { hello_sid, sid_khabiya } from "./api/sid"
 
 app.get("/first-last", first_last);
 app.get("/hello-first-last/:name", hello_first);
 
+app.get("/hello-sid-k/:name", hello_sid);
+app.get("/sid-k", sid_khabiya);
 /* Change things above this line */
 
 //the line of code below will deploy to firebase cloud functions instead of running locally
