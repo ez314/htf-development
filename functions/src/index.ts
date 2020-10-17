@@ -22,7 +22,7 @@ import { hello_EmilyB } from "./api/EmilyB";
 app.get("/first-last", first_last);
 app.get("/hello-first-last/:name", hello_first);
 
-app.get("/hello-EmilyB", hello_EmilyB);
+app.get("/hello-EmilyB/ :name", hello_EmilyB);
 
 /* Change things above this line */
 
