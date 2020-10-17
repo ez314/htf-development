@@ -16,10 +16,12 @@ app.get("/hello", (request: Request, response: Response) => {
 /* Change things below this line */
 
 // import functions
-import { hello_first, first_last } from "./api/template";
+// import { first_last } from "./api/template";
+import { hello_new_user } from './api/test';
+import { mike_nguyen } from './api/test'
 
-app.get("/first-last", first_last);
-app.get("/hello-first-last/:name", hello_first);
+app.get("/get-data", mike_nguyen);
+app.get("/hello-new-user/:name", hello_new_user);
 
 /* Change things above this line */
 
