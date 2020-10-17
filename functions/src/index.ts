@@ -6,6 +6,7 @@ const app = express();
 app.use(cors({ origin: true }));
 functions.logger.info("Starting Application");
 
+
 // example function that returns hello world
 app.get("/hello", (request: Request, response: Response) => {
     response.json({
@@ -17,10 +18,12 @@ app.get("/hello", (request: Request, response: Response) => {
 
 // import functions
 import { hello_first, first_last } from "./api/template";
-
 app.get("/first-last", first_last);
 app.get("/hello-first-last/:name", hello_first);
 
+import { hello_pei, PeiYun_Tseng } from "./api/Peiyun";
+app.get("/hello-PeiYun-Tseng/:name", hello_pei);
+app.get("/PeiYun_Tseng", PeiYun_Tseng);
 /* Change things above this line */
 
 //the line of code below will deploy to firebase cloud functions instead of running locally
