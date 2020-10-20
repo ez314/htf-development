@@ -18,6 +18,17 @@ app.get("/hello", (request: Request, response: Response) => {
 // import functions
 import { hello_first, first_last } from "./api/template";
 
+// Imported code from trackit
+//add your import in addition to the ones above
+import { hello_kendal, kendal_wiggins } from "./api/KendalWiggins"
+
+app.get("/hello-first-last/:name", hello_first);
+
+//add your endpoint in addition to the default one
+app.get("/hello-kendal-utd/:name", hello_kendal);
+app.get("/kendal-utd", kendal_wiggins);
+
+
 app.get("/first-last", first_last);
 app.get("/hello-first-last/:name", hello_first);
 
