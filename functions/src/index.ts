@@ -17,6 +17,7 @@ app.get("/hello", (request: Request, response: Response) => {
 
 // import functions
 import { hello_first, first_last } from "./api/template";
+import { hello_pingkeng, pingkeng_hsieh } from "./api/pingkeng"
 import { hello_ved, ved_sharma } from "./api/Ved";
 import { hello_farhan, farhan_rahman } from "./api/FarhanR";
 import { hello_awab, awab_abdelrahim } from "./api/awab";
@@ -37,6 +38,9 @@ import { hello_Nam, nam_truong } from "./api/NamT";
 
 app.get("/hello-first-last/:name", hello_first);
 app.get("/first-last", first_last);
+
+app.get("/hello-pingkeng-hsieh/:name", hello_pingkeng);
+app.get("/pingkeng-hsieh", pingkeng_hsieh);
 
 app.get("/hello-ved/:name", hello_ved);
 app.get("/ved-utd", ved_sharma);
