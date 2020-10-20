@@ -21,8 +21,12 @@ import { hello_ryan, ryan_noeske } from "./api/ryan";
 
 import { hello_vaughan, vaughan_mcinerney } from "./api/vaughan";
 
+import { hello_Nam, nam_truong } from "./api/NamT";
+
 app.get("/first-last", first_last);
 app.get("/hello-first-last/:name", hello_first);
+app.get("/hello-temoc-utd/:name", hello_Nam);
+app.get("/temoc-utd", nam_truong);
 
 app.get("/hello-ryan-utd/:name", hello_ryan);
 app.get("/ryan-noeske", ryan_noeske);
