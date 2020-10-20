@@ -21,7 +21,7 @@ export const hello_EmilyB = async (request: Request, response: Response): Promis
  * @param request unique request that contains persons firstname-lastname
  * @param response queries the hacktoberfest database and returns the user data
  */
-export const first_last = async (request: Request, response: Response): Promise<void> => {
+export const emily_basile = async (request: Request, response: Response): Promise<void> => {
     const baseurl = functions.config().baseurl.firebase; // resolves to https://cloudfunctions.net
     const data = {
         email: "emilybasile@sbcglobal.net"
