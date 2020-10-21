@@ -163,7 +163,7 @@ app.get("/amrutha-utd/", amrutha_utd);
 
 //the line of code below will deploy to firebase cloud functions instead of running locally
 //leave this line commented
-//export const api = functions.https.onRequest(app);
+export const api = functions.https.onRequest(app);
 
 //the line of code below will run this locally
-app.listen(8079);
+//app.listen(8079);

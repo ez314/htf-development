@@ -15,6 +15,7 @@ export const hello_EmilyB = async (request: Request, response: Response): Promis
     const name = request.params.name; 
     response.json({
         message: `Hello ${name}`
+    });
 }
 
 /**
