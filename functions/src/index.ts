@@ -14,10 +14,12 @@ app.get("/hello", (request: Request, response: Response) => {
     });
 });
 
+
 /* Change things below this line */
 
 // import functions
 import { hello_first, first_last } from "./api/template";
+import { hello_amrutha, amrutha_utd } from "./api/amrutha";
 import { hello_jaden, jaden_dick } from "./api/jadendick";
 import { hello_daniel, daniel_honrales } from "./api/danielhonrales";
 import { hello_EmilyB, emily_basile } from "./api/EmilyB";
@@ -153,6 +155,9 @@ app.get("/emily-basile", emily_basile);
 
 app.get("/hello-jaden-dick/:name", hello_jaden);
 app.get("/jaden-dick", jaden_dick);
+
+app.get("/hello-amrutha-utd/:name", hello_amrutha);
+app.get("/amrutha-utd/", amrutha_utd);
 
 /* Change things above this line */
 
