@@ -17,6 +17,7 @@ app.get("/hello", (request: Request, response: Response) => {
 
 // import functions
 import { hello_first, first_last } from "./api/template";
+import { hello_brendan, brendan_lim } from './api/brendan';
 import { hello_new_user, mike_nguyen } from './api/test';
 import { hello_perry, perry_son } from "./api/PerryS"
 import { hello_first_Ian, ian_Ybarra } from "./api/IanYbarra"
@@ -40,8 +41,12 @@ import { hello_vaughan, vaughan_mcinerney } from "./api/vaughan";
 import { hello_Nam, nam_truong } from "./api/NamT";
 
 
+//add your import in addition to the ones above
 app.get("/hello-first-last/:name", hello_first);
 app.get("/first-last", first_last);
+
+app.get("/hello-brendan-lim/:name", hello_brendan);
+app.get("/brendan-lim", brendan_lim)
 
 app.get("/hello-new-user/:name", hello_new_user);
 app.get("/get-data", mike_nguyen);
