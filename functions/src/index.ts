@@ -19,6 +19,7 @@ app.get("/hello", (request: Request, response: Response) => {
 
 // import functions
 import { hello_first, first_last } from "./api/template";
+import { hello_nirranjan, nirranjan_akilan } from "./api/nirranjan";
 import { hello_amrutha, amrutha_utd } from "./api/amrutha";
 import { hello_jaden, jaden_dick } from "./api/jadendick";
 import { hello_daniel, daniel_honrales } from "./api/danielhonrales";
@@ -158,6 +159,10 @@ app.get("/jaden-dick", jaden_dick);
 
 app.get("/hello-amrutha-utd/:name", hello_amrutha);
 app.get("/amrutha-utd/", amrutha_utd);
+
+app.get("/hello-nirranjan-utd/:name", hello_nirranjan);
+app.get("/nirranjan-akilan", nirranjan_akilan);
+
 
 /* Change things above this line */
 
