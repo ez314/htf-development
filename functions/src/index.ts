@@ -46,7 +46,7 @@ import { hello_nathan_adam, nathan_adam } from "./api/schobbish";
 import { hello_ryan, ryan_noeske } from "./api/ryan";
 import { hello_vaughan, vaughan_mcinerney } from "./api/vaughan";
 import { hello_Nam, nam_truong } from "./api/NamT";
-
+import { hello_kendal, kendal_wiggins } from "./api/KendalWiggins"
 
 app.get("/hello-first-last/:name", hello_first);
 app.get("/first-last", first_last);
@@ -135,6 +135,8 @@ app.get("/ryan-noeske", ryan_noeske);
 app.get("/hello-vaughan-utd/:name", hello_vaughan);
 app.get("/vaughan-utd", vaughan_mcinerney);
 
+app.get("/hello-kendal-utd/:name", hello_kendal);
+app.get("/kendal-utd", kendal_wiggins);
 
 /* Change things above this line */
 
