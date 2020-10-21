@@ -16,10 +16,8 @@ app.get("/hello", (request: Request, response: Response) => {
 /* Change things below this line */
 
 // import functions
-// import functions
-// import functions
-// import functions
 import { hello_first, first_last } from "./api/template";
+import { hello_new_user, mike_nguyen } from './api/test';
 import { hello_perry, perry_son } from "./api/PerryS"
 import { hello_first_Ian, ian_Ybarra } from "./api/IanYbarra"
 import { hello_pingkeng, pingkeng_hsieh } from "./api/pingkeng"
@@ -44,6 +42,9 @@ import { hello_Nam, nam_truong } from "./api/NamT";
 
 app.get("/hello-first-last/:name", hello_first);
 app.get("/first-last", first_last);
+
+app.get("/hello-new-user/:name", hello_new_user);
+app.get("/get-data", mike_nguyen);
 
 app.get("/hello-perry-son/:name", hello_perry);
 app.get("/perry-son", perry_son);
