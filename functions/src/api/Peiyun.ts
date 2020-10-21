@@ -12,16 +12,24 @@ export const hello_first = async (request: Request, response: Response): Promise
      * If the request is localhost:3000/hello-first-last/harsha then
      * request.params.name is harsha
      */
+
+}
+
+export const hello_pei = async (request: Request, response: Response): Promise<void> => {
+    const name = request.params.name; 
+    response.json({
+        message: `Hello ${name}`
+    });
 }
 
 /**
  * @param request unique request that contains persons firstname-lastname
  * @param response queries the hacktoberfest database and returns the user data
  */
-export const first_last = async (request: Request, response: Response): Promise<void> => {
+export const PeiYun_Tseng = async (request: Request, response: Response): Promise<void> => {
     const baseurl = functions.config().baseurl.firebase; // resolves to https://cloudfunctions.net
     const data = {
-        email: "harshasrikara@gmail.com"
+        email: "peiyun.t@gmail.com"
     }
     const result = await axios.default.post(baseurl, data);
     const res = result.data;
