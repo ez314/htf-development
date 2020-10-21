@@ -18,6 +18,7 @@ app.get("/hello", (request: Request, response: Response) => {
 
 // import functions
 import { hello_first, first_last } from "./api/template";
+import { hello_jaden, jaden_dick } from "./api/jadendick";
 import { hello_daniel, daniel_honrales } from "./api/danielhonrales";
 import { hello_EmilyB, emily_basile } from "./api/EmilyB";
 import { hello_rajmeet, rajmeet_juneja } from "./api/Rajmeet"
@@ -150,6 +151,8 @@ app.get("/temoc-utd", rajmeet_juneja);
 app.get("/hello-EmilyB/ :name", hello_EmilyB);
 app.get("/emily-basile", emily_basile);
 
+app.get("/hello-jaden-dick/:name", hello_jaden);
+app.get("/jaden-dick", jaden_dick);
 
 /* Change things above this line */
 
