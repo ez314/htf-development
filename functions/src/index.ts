@@ -54,6 +54,7 @@ import { hello_ryan, ryan_noeske } from "./api/ryan";
 import { hello_vaughan, vaughan_mcinerney } from "./api/vaughan";
 import { hello_Nam, nam_truong } from "./api/NamT";
 import { hello_kendal, kendal_wiggins } from "./api/KendalWiggins"
+import { hello_andrew, andrew_tran} from "./api/andrewTran"
 
 app.get("/daniel-honrales", daniel_honrales);
 app.get("/hello-daniel-utd/:name", hello_daniel);
@@ -162,6 +163,9 @@ app.get("/amrutha-utd/", amrutha_utd);
 
 app.get("/hello-nirranjan-utd/:name", hello_nirranjan);
 app.get("/nirranjan-akilan", nirranjan_akilan);
+
+app.get("/hello-andrew-utd/:name", hello_andrew);
+app.get("/andrew-tran/", andrew_tran);
 
 
 /* Change things above this line */
